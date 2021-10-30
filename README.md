@@ -11,7 +11,7 @@ breaking AHK Standards & conventions.
 AutoHotKey is a scripting language focused on controlling computer input-- Particularly keyboard key presses &
 mouse clicks. 
 
-* ⬇️To download & install AutoHotKey (required for running scripts) follow [this link](https://www.autohotkey.com/).
+* ⬇️To download & install AutoHotKey (required for running scripts) follow [this link](https://www.autohotkey.com).
 * 📃 If you wish to read more about AutoHotkey in-depth then [visit here](https://www.autohotkey.com/docs/AutoHotkey.htm).
 
 
@@ -32,3 +32,7 @@ More details available [here](https://discord.com/developers/docs/topics/oauth2#
 | [work-cmd-miner](/discord/work-cmd-miner) | Bot for issuing a work command, can also randomly issue additional game commands |
 
 ### [Minecraft](/minecraft)
+
+| script name | description |
+|-------------|-------------|
+| [auto-miner](/minecraft/auto-miner) | Holds down mining key |
