@@ -3,7 +3,7 @@
 ## Description
 
 The script works for direct message discord conversations. It should scroll up every `attemptsBeforeScrolling` number 
-of delete attempts--this enables it to continue deleting messages; 
+of delete attempts which allows the script to continue deleting messages.
 
 ⚠️Sometimes, if it doesn't scroll up properly, the script begins to fail.
 
