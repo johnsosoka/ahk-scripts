@@ -4,8 +4,8 @@
 
 ### About
 Repository to house my various auto hotkey scripts. I am making these publicly available, but anybody who chooses to 
-use these should be aware that I am very inexperienced with developing AHK scripts. It is extremely likely that I am
-breaking AHK Standards & conventions.
+use these should be aware that I am very inexperienced with developing AHK scripts. It is very likely that I am
+breaking common AHK Standards & conventions.
 
 ### What is AutoHotKey?
 AutoHotKey is a scripting language focused on controlling computer input-- Particularly keyboard key presses &
