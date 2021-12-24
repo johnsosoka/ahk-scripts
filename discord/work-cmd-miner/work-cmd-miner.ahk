@@ -28,6 +28,9 @@ USAGE:
 
 CHANGELOG:
 
+1.0.3:
+    * Working Hours Introduced (bot will only execute work command during these hours)
+
 1.0.2:
     * Gambling percent chance can be set in script config now.
     * updated readme
@@ -36,11 +39,15 @@ CHANGELOG:
 
 
 global GamblingEnabled := true
-global GamblingPercentChance := 20
+global GamblingPercentChance := 5
 global AccountForTimeDrift = := true
 
 ; Which Hour should Daily command be invoked (Default 8pm, 20)
 global ExecuteDailyHour = 20
+
+; Work Hours, Start
+global startWorkHours = 10
+global endWorkHours = 18
 
 ; Internally Used Vars Below
 OneMinuteMilliseconds := 60000
@@ -55,7 +62,11 @@ F1::
 	; We will occasionally correct for the time drift by randomly waiting to execute on the hour.
 
 	VariableSleepDuration := GenerateSleepDuration(OneMinuteMilliseconds*60, (OneMinuteMilliseconds*65))
-	DoWork()
+
+	if (ShouldWork())
+	{
+	    DoWork()
+	}
 	
 	; Execute Daily command if we haven't and if it's the correct hour.
 	if (ShouldDaily())
@@ -115,6 +126,16 @@ ShouldDaily() {
     return shouldDaily
 }
 
+; Method to assist work hours
+ShouldWork() {
+    shouldWork := false
+
+    if (A_Hour >= startWorkHours and A_Hour <= endWorkHours) {
+        shouldWork := true
+    }
+
+    return shouldWork
+}
 
 ; Determine if we should gamble. Utilizes GamblingPercentChance to determine chance of issuing command.
 ; Any value >= 100 = will determine that script should gamble.

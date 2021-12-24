@@ -30,6 +30,8 @@ More details available [here](https://discord.com/developers/docs/topics/oauth2#
 | [discord-message-deleter](/discord/discord-message-deleter) | Scrolls up & deletes all of your messages  |
 | [fp-hmm-bot](/discord/fp-hmm-bot) | Bot for spamming/playing "hmmm" only chat channel                    |
 | [work-cmd-miner](/discord/work-cmd-miner) | Bot for issuing a work command, can also randomly issue additional game commands |
+| [anti-snipe-deleter](/discord/anti-snipe-deleter) | Script to delete previous message + overwrite standard snipe bot buffer with "no snipe pls" |
+
 
 ### [Minecraft](/minecraft)
 
