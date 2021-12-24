@@ -5,7 +5,7 @@ F1::
     return
 
 F2::
-    MsgBox, Exiting Discord Deleter Script
+    MsgBox, Exiting anti-snipe-deleter Script
     ExitApp
 
 
