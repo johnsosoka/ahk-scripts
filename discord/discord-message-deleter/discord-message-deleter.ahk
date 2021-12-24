@@ -2,7 +2,7 @@
 attemptsBeforeScrolling := 5
 
 ; Automatically exit the script after this many attempts.
-maximumAttempts := 1500 
+maximumAttempts := 1500
 
 ; (Internal) Used for counting the deleted message attempts. Gets reset every X amount of attempts.
 deleteAttempts := 0
@@ -39,7 +39,7 @@ F1::
 	MsgBox, Maximum Attemps Reached or Exceeded. Exiting.
 	ExitApp
 	}
-	
+
     }
     return
 
